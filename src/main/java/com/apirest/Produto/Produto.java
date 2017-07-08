@@ -16,9 +16,14 @@ public class Produto extends EntidadeBase {
     @JsonView
     private  double valor;
 
-    public Produto(String descricao, double valor) {
+    @Column
+    @JsonView
+    private  String url;
+
+    public Produto(String descricao, double valor, String url) {
         this.descricao = descricao;
         this.valor = valor;
+        this.url = url;
     }
 
     public Produto() { }

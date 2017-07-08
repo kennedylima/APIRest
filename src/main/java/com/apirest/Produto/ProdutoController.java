@@ -8,6 +8,7 @@ import java.util.Collection;
 
 @RestController
 @RequestMapping(value = "/produto")
+@CrossOrigin(origins = "*")
 public class ProdutoController {
 
     @Autowired
